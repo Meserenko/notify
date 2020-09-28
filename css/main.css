@@ -185,7 +185,7 @@ input[placeholder] {
 #submit {
   border-radius: 0 18px 18px 0;
   width: 160px;
-  height: 61px;
+  height: 58px;
   background-color: #2ecc71;
   font-family: Raleway, serif;
   font-size: 22px;
@@ -195,7 +195,16 @@ input[placeholder] {
 }
 
 .emailForm input:nth-child(2) {
-  transform: translate(-130px);
+  transform: translate(-134px, 1px);
+}
+
+@media (max-width: 591px) {
+  .emailForm input:nth-child(2){
+    transform: translate(-134px);
+  }
+  #submit {
+    height: 56px;
+  }
 }
 
 .quote {
